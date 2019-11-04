@@ -51,6 +51,11 @@ namespace VisualWebPartProject2016.VisualWebPart1
 
                 item["multiUserColumn"] = userCollection;
                 item.Update();
+
+
+                var spAccounts = spPeoplePicker.Entities;
+                var spUserCollection = new SPFieldUserValueCollection();
+                
             }
             catch (Exception ex)
             {

@@ -15,7 +15,8 @@
         </div>
         <h3>Viewers</h3>
         <div>
-            <%--<SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" CssClass="ms-multiple-viewer" SelectionSet="User" />--%>
+            <SharePoint:PeopleEditor ID="spPeoplePicker" Name="spPeoplePicker" runat="server" CssClass="ms-multiple-viewer" SelectionSet="User" />
+
             <SharePoint:ClientPeoplePicker ID="peoplePickerMultiple"
                                            Name="peoplePickerMultiple"
                                            ValidationEnabled="true"                                           
@@ -42,7 +43,55 @@
             <asp:Button runat="server" Text="Save" OnClick="Save_Click"></asp:Button>
         </div>
     </div>
+
 </div>
 
+
+<div id="welcomeApp" ng-app="app">    
+    <div>
+        <h3>Client Side People Picker</h3>
+    </div>       
+    <div ng-controller="appCtrlr as vm">
+        <div id="peoplePickerDivAP" data-ng-disabled="{{false}}" ui-people ng-model="vm.data.mu" pp-is-multiuser="{{true}}" pp-width="100%" pp-account-type="User" pp-web-url="{{vm.webUrl}}"></div>
+    </div>
+</div>
+
+
+<!-- Load third party scripts required by the people picker -->
+<script type="text/ecmascript" src="/_layouts/15/SP.UI.Controls.js"></script>
+<script type="text/ecmascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/ecmascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/ecmascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/ecmascript" src="/_layouts/15/autofill.js"></script>
+<script type="text/ecmascript" src="/_layouts/15/sp.RequestExecutor.js"></script>
+
+<!-- AngularJS-->
 <script type="text/javascript" src="/Style%20Library/SiteAssets/libs/angular/angular.min.js"></script>
-<script type="text/javascript" src="/Style%20Library/SiteAssets/apps/welcomeAngular/welcomeAngular.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/libs/angular/angular-resource.min.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/libs/angular/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/libs/angular/angular-route.min.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/apps/peoplePicker/app.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/apps/peoplePicker/config.peoplepicker.js"></script>
+<script type="text/javascript" src="/Style%20Library/SiteAssets/apps/peoplePicker/controllers.js"></script>
+
+<style>
+    /* People Picker Modifications */
+    div#strk .sp-peoplepicker-autoFillContainer{
+	    z-index: 20;
+	    background-color:#fff;
+    }
+    div#strk .sp-peoplepicker-topLevel{
+	    background-color:#fff;
+    }
+    div#strk .sp-peoplepicker-topLevel{
+	    min-height: 100px;
+    }
+
+    div#peoplePicker_peoplePickerDivAP_TopSpan {
+        width: 80%;
+        min-height: 100px;
+    }
+    input#peoplePicker_peoplePickerDivAP_TopSpan_EditorInput{
+        border: none;
+    }
+</style>

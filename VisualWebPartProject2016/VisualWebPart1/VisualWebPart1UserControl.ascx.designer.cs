@@ -22,6 +22,15 @@ namespace VisualWebPartProject2016.VisualWebPart1 {
         protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
+        /// spPeoplePicker control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.PeopleEditor spPeoplePicker;
+        
+        /// <summary>
         /// peoplePickerMultiple control.
         /// </summary>
         /// <remarks>
