@@ -1,2 +1,2 @@
-# sample-sharepoint-2019
-sample-sharepoint-2019
+# sharepoint-addin-employee
+- sharepoint-addin-employee
