@@ -1,2 +1,2 @@
-# sharepoint-addin-employee
-- sharepoint-addin-employee
+# sharepoint-employee
+- sharepoint-employee
