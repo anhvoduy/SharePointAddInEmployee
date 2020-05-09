@@ -83,11 +83,11 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\SharePointAddInEmployee\SharePointAddInEmployee.feature">
+    <None Include="Features\SharePointDocuments\SharePointDocuments.feature">
       <FeatureId>{62697224-4efb-4681-945f-030b3f5c6cad}</FeatureId>
     </None>
-    <None Include="Features\SharePointAddInEmployee\SharePointAddInEmployee.Template.xml">
-      <DependentUpon>SharePointAddInEmployee.feature</DependentUpon>
+    <None Include="Features\SharePointDocuments\SharePointDocuments.Template.xml">
+      <DependentUpon>SharePointDocuments.feature</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
