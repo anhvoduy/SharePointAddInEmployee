@@ -3,5 +3,28 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Content\" Type="ElementManifest" />
     <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-grid.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-grid.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-grid.min.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-grid.min.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-reboot.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-reboot.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-reboot.min.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap-reboot.min.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap.min.css" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\css\bootstrap.min.css.map" Target="Content\bootstrap\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.bundle.js" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.bundle.js.map" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.bundle.min.js" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.bundle.min.js.map" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.js" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.js.map" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.min.js" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap\js\bootstrap.min.js.map" Target="Content\bootstrap\js\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
   </Files>
 </ProjectItem>

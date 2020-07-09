@@ -2,5 +2,28 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Content">
     <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-grid.css" Url="Content/bootstrap/css/bootstrap-grid.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-grid.css.map" Url="Content/bootstrap/css/bootstrap-grid.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-grid.min.css" Url="Content/bootstrap/css/bootstrap-grid.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-grid.min.css.map" Url="Content/bootstrap/css/bootstrap-grid.min.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-reboot.css" Url="Content/bootstrap/css/bootstrap-reboot.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-reboot.css.map" Url="Content/bootstrap/css/bootstrap-reboot.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-reboot.min.css" Url="Content/bootstrap/css/bootstrap-reboot.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap-reboot.min.css.map" Url="Content/bootstrap/css/bootstrap-reboot.min.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap.css" Url="Content/bootstrap/css/bootstrap.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap.css.map" Url="Content/bootstrap/css/bootstrap.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap.min.css" Url="Content/bootstrap/css/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\css\bootstrap.min.css.map" Url="Content/bootstrap/css/bootstrap.min.css.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.bundle.js" Url="Content/bootstrap/js/bootstrap.bundle.js" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.bundle.js.map" Url="Content/bootstrap/js/bootstrap.bundle.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.bundle.min.js" Url="Content/bootstrap/js/bootstrap.bundle.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.bundle.min.js.map" Url="Content/bootstrap/js/bootstrap.bundle.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.js" Url="Content/bootstrap/js/bootstrap.js" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.js.map" Url="Content/bootstrap/js/bootstrap.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.min.js" Url="Content/bootstrap/js/bootstrap.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap\js\bootstrap.min.js.map" Url="Content/bootstrap/js/bootstrap.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular.js" Url="Content/angularjs/angular.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular.min.js" Url="Content/angularjs/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular.min.js.map" Url="Content/angularjs/angular.min.js.map" ReplaceContent="TRUE" />
   </Module>
 </Elements>
