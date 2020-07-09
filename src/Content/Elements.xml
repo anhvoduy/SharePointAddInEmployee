@@ -25,5 +25,40 @@
     <File Path="Content\angularjs\angular.js" Url="Content/angularjs/angular.js" ReplaceContent="TRUE" />
     <File Path="Content\angularjs\angular.min.js" Url="Content/angularjs/angular.min.js" ReplaceContent="TRUE" />
     <File Path="Content\angularjs\angular.min.js.map" Url="Content/angularjs/angular.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-touch.min.js.map" Url="Content/angularjs/angular-touch.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-animate.js" Url="Content/angularjs/angular-animate.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-animate.min.js" Url="Content/angularjs/angular-animate.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-animate.min.js.map" Url="Content/angularjs/angular-animate.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-aria.js" Url="Content/angularjs/angular-aria.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-aria.min.js" Url="Content/angularjs/angular-aria.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-aria.min.js.map" Url="Content/angularjs/angular-aria.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-cookies.js" Url="Content/angularjs/angular-cookies.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-cookies.min.js" Url="Content/angularjs/angular-cookies.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-cookies.min.js.map" Url="Content/angularjs/angular-cookies.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-csp.css" Url="Content/angularjs/angular-csp.css" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-loader.js" Url="Content/angularjs/angular-loader.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-loader.min.js" Url="Content/angularjs/angular-loader.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-loader.min.js.map" Url="Content/angularjs/angular-loader.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-message-format.js" Url="Content/angularjs/angular-message-format.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-message-format.min.js" Url="Content/angularjs/angular-message-format.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-message-format.min.js.map" Url="Content/angularjs/angular-message-format.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-messages.js" Url="Content/angularjs/angular-messages.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-messages.min.js" Url="Content/angularjs/angular-messages.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-messages.min.js.map" Url="Content/angularjs/angular-messages.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-mocks.js" Url="Content/angularjs/angular-mocks.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-parse-ext.js" Url="Content/angularjs/angular-parse-ext.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-parse-ext.min.js" Url="Content/angularjs/angular-parse-ext.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-parse-ext.min.js.map" Url="Content/angularjs/angular-parse-ext.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-resource.js" Url="Content/angularjs/angular-resource.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-resource.min.js" Url="Content/angularjs/angular-resource.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-resource.min.js.map" Url="Content/angularjs/angular-resource.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-route.js" Url="Content/angularjs/angular-route.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-route.min.js" Url="Content/angularjs/angular-route.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-route.min.js.map" Url="Content/angularjs/angular-route.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-sanitize.js" Url="Content/angularjs/angular-sanitize.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-sanitize.min.js" Url="Content/angularjs/angular-sanitize.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-sanitize.min.js.map" Url="Content/angularjs/angular-sanitize.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-touch.js" Url="Content/angularjs/angular-touch.js" ReplaceContent="TRUE" />
+    <File Path="Content\angularjs\angular-touch.min.js" Url="Content/angularjs/angular-touch.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

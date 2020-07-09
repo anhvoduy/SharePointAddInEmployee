@@ -26,5 +26,40 @@
     <ProjectItemFile Source="angularjs\angular.js" Target="Content\angularjs\" Type="ElementFile" />
     <ProjectItemFile Source="angularjs\angular.min.js" Target="Content\angularjs\" Type="ElementFile" />
     <ProjectItemFile Source="angularjs\angular.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-touch.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-animate.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-animate.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-animate.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-aria.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-aria.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-aria.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-cookies.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-cookies.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-cookies.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-csp.css" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-loader.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-loader.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-loader.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-message-format.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-message-format.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-message-format.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-messages.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-messages.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-messages.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-mocks.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-parse-ext.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-parse-ext.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-parse-ext.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-resource.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-resource.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-resource.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-route.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-route.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-route.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-sanitize.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-sanitize.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-sanitize.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-touch.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="angularjs\angular-touch.min.js" Target="Content\angularjs\" Type="ElementFile" />
   </Files>
 </ProjectItem>
