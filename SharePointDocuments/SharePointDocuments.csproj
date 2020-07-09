@@ -42,9 +42,32 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Content\angularjs\angular.js" />
+    <Content Include="Content\angularjs\angular.min.js" />
+    <Content Include="Content\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Content\angularjs\angular.min.js.map" />
+    <None Include="Content\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="Content\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="Content\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="Content\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="Content\bootstrap\css\bootstrap.css.map" />
+    <None Include="Content\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="Content\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="Content\bootstrap\js\bootstrap.js.map" />
+    <None Include="Content\bootstrap\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ab0ba0cb-2d01-4016-8f92-00a0fac618eb}</SharePointProjectItemId>

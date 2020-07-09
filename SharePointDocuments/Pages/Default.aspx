@@ -8,7 +8,17 @@
 
 <%-- The markup and script in the following Content element will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
+    <!-- jquery -->
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="Stylesheet" type="text/css" href="../Content/bootstrap/bootstrap.min.css" />
+    <script type="text/javascript" src="../Content/bootstrap/bootstrap.min.js"></script>
+
+    <!-- angularjs -->
+    <script type="text/javascript" src="../Content/angularjs/angular.min.js"></script>
+    
+    <!-- sharepoint -->
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
 
@@ -30,7 +40,7 @@
     <div>
         <p id="message">
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            App is initializing...
+            App with angularjs is initializing...
         </p>
     </div>
 
