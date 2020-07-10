@@ -29,12 +29,21 @@
     
     <!-- sharepoint -->
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="sp.core.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <!--
+    <SharePoint:ScriptLink name="sp.runtime.j" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="SP.UI.Controls.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="clienttemplates.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="clientforms.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="autofill.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink name="sp.RequestExecutor.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    -->
     <meta name="WebPartPageExpansion" content="full" />
 
-    <!-- Add your CSS styles to the following file -->
+    <!-- add your CSS styles to the following file -->
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 
-    <!-- Add your JavaScript to the following file -->
+    <!-- add your JavaScript to the following file -->
     <script type="text/javascript" src="../Scripts/App.js"></script>
     <script type="text/javascript" src="../Scripts/AppDocument.js"></script>
 </asp:Content>
@@ -46,16 +55,15 @@
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-    <div class="container">
+    <div class="container-fluid">
         <div id="appDocument">
             <div search-container>
-                <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-                initializing...
+                App is initializing...
             </div>
-        </div>
-        <div id="message">
-            <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            App is initializing...
+            <div id="message">
+                <!-- The following content will be replaced with the user name when you run the app - see App.js -->
+                App is initializing...
+            </div>
         </div>
     </div>
 </asp:Content>

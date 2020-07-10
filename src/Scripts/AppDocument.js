@@ -1,4 +1,5 @@
-﻿(function () {
+﻿'use strict';
+(function () {
 	'use strict';
 	angular.module('appDocument', [])
 		.directive('searchContainer', searchContainer)
@@ -33,7 +34,7 @@
 				return template;
 			},
 			link: function (scope, element, attrs, ngCtrl) {
-				console.log('init directive search-container.....');
+				//console.log('init directive search-container.....');
 			}
 		};
 	};
@@ -42,7 +43,6 @@
 	searchController.$inject = ['$scope', '$q', 'searchService'];
 	function searchController($scope, $q, searchService) {
 		// models
-		var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
 		$scope.searchString = '';
 		$scope.items = [
 			{
@@ -84,7 +84,19 @@
 
 		// functions
 		var activate = function () {
-			console.log('- activate():');
+			$scope.siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+			$scope.appweburl = decodeURIComponent(getQueryStringParameter("SPAppWebUrl"));
+			$scope.hostweburl = decodeURIComponent(getQueryStringParameter("SPHostUrl"));
+		}
+
+		var getQueryStringParameter = function () {
+			var params = document.URL.split("?")[1].split("&");
+			var strParams = "";
+			for (var i = 0; i < params.length; i = i + 1) {
+				var singleParam = params[i].split("=");
+				if (singleParam[0] == paramToRetrieve)
+					return singleParam[1];
+			}
 		}
 
 		$scope.changeSearch = function (keyword) {
@@ -92,11 +104,10 @@
 		}
 
 		$scope.submitSearch = function (keyword) {
-			console.log('- submitSearch():', keyword);
-
-			searchService.getData(siteUrl, keyword).then(function (result) {
-				if (result)
+			searchService.getData($scope.siteUrl, keyword).then(function (result) {
+				if (result) {
 					console.log(result.d.query.PrimaryQueryResult);
+				}
 			}, function (error) {
 				console.log(error);
 			})
@@ -156,8 +167,10 @@
 
 /* prevent default form submit */
 (function () {
-	angular.element('#aspnetForm').submit(function (e) {
-		e.preventDefault();
-		return false;
-	});
+	$(document).ready(function() {
+		angular.element("#aspnetForm").submit(function(e){
+			e.preventDefault();
+			return false;
+		});
+	});	
 })();
