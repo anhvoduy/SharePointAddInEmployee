@@ -3,5 +3,8 @@
   <Module Name="Images">
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
     <File Path="Images\logo.png" Url="Images/logo.png" ReplaceContent="TRUE" />
+    <File Path="Images\icon-32x32.png" Url="Images/icon-32x32.png" ReplaceContent="TRUE" />
+    <File Path="Images\icon-48x48.png" Url="Images/icon-48x48.png" ReplaceContent="TRUE" />
+    <File Path="Images\icon-96x96.png" Url="Images/icon-96x96.png" ReplaceContent="TRUE" />
   </Module>
 </Elements>
