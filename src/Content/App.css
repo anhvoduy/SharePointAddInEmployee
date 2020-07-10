@@ -1,4 +1,4 @@
 ﻿/* Place custom styles below */
-::after, ::before {
+*, ::after, ::before {
     box-sizing: content-box;
 }

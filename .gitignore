@@ -4,3 +4,5 @@ bin/
 obj/
 Debug/
 Release/
+libs/angular-1.7.9/*
+libs/bootstrap-4.3.1/*

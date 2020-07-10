@@ -12,8 +12,8 @@
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
 
     <!-- bootstrap -->
-    <link rel="Stylesheet" type="text/css" href="../Content/bootstrap/bootstrap.min.css" />
-    <script type="text/javascript" src="../Content/bootstrap/bootstrap.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="../Content/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../Content/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- angularjs -->
     <script type="text/javascript" src="../Content/angularjs/angular.min.js"></script>

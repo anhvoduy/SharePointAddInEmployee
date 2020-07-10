@@ -3,11 +3,11 @@
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="SharePointDocuments"
      ProductID="{ab0ba0cb-2d01-4016-8f92-00a0fac618eb}"
-     Version="1.1.0.1"
+     Version="1.1.0.0"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>SharePointDocuments</Title>
+    <Title>SharePoint Documents</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 
