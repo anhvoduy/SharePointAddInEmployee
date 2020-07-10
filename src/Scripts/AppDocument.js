@@ -84,12 +84,11 @@
 
 		// functions
 		var activate = function () {
-			$scope.siteUrl = _spPageContextInfo.siteAbsoluteUrl;
 			$scope.appweburl = decodeURIComponent(getQueryStringParameter("SPAppWebUrl"));
 			$scope.hostweburl = decodeURIComponent(getQueryStringParameter("SPHostUrl"));
 		}
 
-		var getQueryStringParameter = function () {
+		var getQueryStringParameter = function (paramToRetrieve) {
 			var params = document.URL.split("?")[1].split("&");
 			var strParams = "";
 			for (var i = 0; i < params.length; i = i + 1) {
@@ -104,7 +103,8 @@
 		}
 
 		$scope.submitSearch = function (keyword) {
-			searchService.getData($scope.siteUrl, keyword).then(function (result) {
+			var siteUrl = $scope.hostweburl || _spPageContextInfo.siteAbsoluteUrl;
+			searchService.getData(siteUrl, keyword).then(function (result) {
 				if (result) {
 					console.log(result.d.query.PrimaryQueryResult);
 				}
@@ -121,7 +121,7 @@
 	searchService.$inject = ['$http', '$q'];
 	function searchService($http, $q) {		
 		var searchService = function () {
-		}		
+		}
 		searchService.prototype.getData = function (siteUrl, keyword) {
 			var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
 			var q = $q.defer();
@@ -129,12 +129,11 @@
 				url: url,
 				method: 'GET',
 				headers: {
-					"Content-Type": "application/json;odata=verbose",
 					"Accept": "application/json;odata=verbose"
 				}
-			}).success(function (result) {
+			}).then(function (result) {
 				q.resolve(result);
-			}).error(function (error, status) {
+			}, function (error, status) {
 				q.reject(error);
 			});
 			return q.promise;
