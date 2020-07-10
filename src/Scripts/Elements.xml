@@ -6,7 +6,8 @@
     <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\AppDocuments.js" Url="Scripts/AppDocuments.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\AppDocument.js" Url="Scripts/AppDocument.js" ReplaceContent="TRUE" />
     <File Path="Scripts\BrowserHelper.js" Url="Scripts/BrowserHelper.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\AppFeedback.js" Url="Scripts/AppFeedback.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

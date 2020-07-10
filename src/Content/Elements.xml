@@ -60,5 +60,13 @@
     <File Path="Content\angularjs\angular-sanitize.min.js.map" Url="Content/angularjs/angular-sanitize.min.js.map" ReplaceContent="TRUE" />
     <File Path="Content\angularjs\angular-touch.js" Url="Content/angularjs/angular-touch.js" ReplaceContent="TRUE" />
     <File Path="Content\angularjs\angular-touch.min.js" Url="Content/angularjs/angular-touch.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\locales.js" Url="Content/momentjs/locales.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\locales.min.js" Url="Content/momentjs/locales.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\locales.min.js.map" Url="Content/momentjs/locales.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\moment.min.js" Url="Content/momentjs/moment.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\moment.min.js.map" Url="Content/momentjs/moment.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\moment-with-locales.js" Url="Content/momentjs/moment-with-locales.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\moment-with-locales.min.js" Url="Content/momentjs/moment-with-locales.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\momentjs\moment-with-locales.min.js.map" Url="Content/momentjs/moment-with-locales.min.js.map" ReplaceContent="TRUE" />
   </Module>
 </Elements>

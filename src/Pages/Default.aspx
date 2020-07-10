@@ -23,6 +23,9 @@
     <script type="text/javascript" src="../Content/angularjs/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="../Content/angularjs/angular-touch.min.js"></script>
     <script type="text/javascript" src="../Content/angularjs/angular-animate.min.js"></script>
+
+    <!-- momentjs -->
+    <script type="text/javascript" src="../Content/momentjs/moment.min.js"></script>
     
     <!-- sharepoint -->
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
@@ -33,6 +36,7 @@
 
     <!-- Add your JavaScript to the following file -->
     <script type="text/javascript" src="../Scripts/App.js"></script>
+    <script type="text/javascript" src="../Scripts/AppDocument.js"></script>
 </asp:Content>
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
@@ -43,11 +47,15 @@
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
     <div class="container">
-        <div id="app-document">
-            <p id="message">
+        <div id="appDocument">
+            <div search-container>
+                <!-- The following content will be replaced with the user name when you run the app - see App.js -->
+                initializing...
+            </div>
+        </div>
+        <div id="message">
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-                App is initializing...
-            </p>        
+            App is initializing...
         </div>
     </div>
 </asp:Content>

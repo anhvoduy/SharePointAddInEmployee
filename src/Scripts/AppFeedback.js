@@ -1861,7 +1861,7 @@
 /* AppMain */
 (function () {
     'use strict';
-    angular.module('AppMain', [
+    angular.module('AppFeedback', [
         'AppCommon',
         'AppDirective',
         'AppService',

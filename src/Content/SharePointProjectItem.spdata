@@ -61,5 +61,13 @@
     <ProjectItemFile Source="angularjs\angular-sanitize.min.js.map" Target="Content\angularjs\" Type="ElementFile" />
     <ProjectItemFile Source="angularjs\angular-touch.js" Target="Content\angularjs\" Type="ElementFile" />
     <ProjectItemFile Source="angularjs\angular-touch.min.js" Target="Content\angularjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\locales.js" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\locales.min.js" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\locales.min.js.map" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\moment.min.js" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\moment.min.js.map" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\moment-with-locales.js" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\moment-with-locales.min.js" Target="Content\momentjs\" Type="ElementFile" />
+    <ProjectItemFile Source="momentjs\moment-with-locales.min.js.map" Target="Content\momentjs\" Type="ElementFile" />
   </Files>
 </ProjectItem>
