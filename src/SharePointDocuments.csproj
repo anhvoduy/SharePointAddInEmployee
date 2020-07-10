@@ -6,8 +6,8 @@
     <ProjectGuid>{5FFD62DE-7927-4B1E-A0E1-992A77FD37A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SharePointAddInSample</RootNamespace>
-    <AssemblyName>SharePointAddInSample</AssemblyName>
+    <RootNamespace>SharePointDocuments</RootNamespace>
+    <AssemblyName>SharePointDocuments</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetOfficeVersion>16.1</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
