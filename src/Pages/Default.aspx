@@ -17,6 +17,12 @@
 
     <!-- angularjs -->
     <script type="text/javascript" src="../Content/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-resource.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-route.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-touch.min.js"></script>
+    <script type="text/javascript" src="../Content/angularjs/angular-animate.min.js"></script>
     
     <!-- sharepoint -->
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
@@ -31,20 +37,17 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Page Title - SharePoint Documents
+    SharePoint App Documents
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-
-    <div id="app-document">
-        <p id="message">
+    <div class="container">
+        <div id="app-document">
+            <p id="message">
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            App is initializing...
-        </p>
-        <div class="container">
-
+                App is initializing...
+            </p>        
         </div>
     </div>
-
 </asp:Content>

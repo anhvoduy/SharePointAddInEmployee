@@ -42,6 +42,30 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Content\angularjs\angular-animate.js" />
+    <Content Include="Content\angularjs\angular-animate.min.js" />
+    <Content Include="Content\angularjs\angular-aria.js" />
+    <Content Include="Content\angularjs\angular-aria.min.js" />
+    <Content Include="Content\angularjs\angular-cookies.js" />
+    <Content Include="Content\angularjs\angular-cookies.min.js" />
+    <Content Include="Content\angularjs\angular-csp.css" />
+    <Content Include="Content\angularjs\angular-loader.js" />
+    <Content Include="Content\angularjs\angular-loader.min.js" />
+    <Content Include="Content\angularjs\angular-message-format.js" />
+    <Content Include="Content\angularjs\angular-message-format.min.js" />
+    <Content Include="Content\angularjs\angular-messages.js" />
+    <Content Include="Content\angularjs\angular-messages.min.js" />
+    <Content Include="Content\angularjs\angular-mocks.js" />
+    <Content Include="Content\angularjs\angular-parse-ext.js" />
+    <Content Include="Content\angularjs\angular-parse-ext.min.js" />
+    <Content Include="Content\angularjs\angular-resource.js" />
+    <Content Include="Content\angularjs\angular-resource.min.js" />
+    <Content Include="Content\angularjs\angular-route.js" />
+    <Content Include="Content\angularjs\angular-route.min.js" />
+    <Content Include="Content\angularjs\angular-sanitize.js" />
+    <Content Include="Content\angularjs\angular-sanitize.min.js" />
+    <Content Include="Content\angularjs\angular-touch.js" />
+    <Content Include="Content\angularjs\angular-touch.min.js" />
     <Content Include="Content\angularjs\angular.js" />
     <Content Include="Content\angularjs\angular.min.js" />
     <Content Include="Content\bootstrap\css\bootstrap-grid.css" />
@@ -57,6 +81,17 @@
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Content\angularjs\angular-animate.min.js.map" />
+    <None Include="Content\angularjs\angular-aria.min.js.map" />
+    <None Include="Content\angularjs\angular-cookies.min.js.map" />
+    <None Include="Content\angularjs\angular-loader.min.js.map" />
+    <None Include="Content\angularjs\angular-message-format.min.js.map" />
+    <None Include="Content\angularjs\angular-messages.min.js.map" />
+    <None Include="Content\angularjs\angular-parse-ext.min.js.map" />
+    <None Include="Content\angularjs\angular-resource.min.js.map" />
+    <None Include="Content\angularjs\angular-route.min.js.map" />
+    <None Include="Content\angularjs\angular-sanitize.min.js.map" />
+    <None Include="Content\angularjs\angular-touch.min.js.map" />
     <None Include="Content\angularjs\angular.min.js.map" />
     <None Include="Content\bootstrap\css\bootstrap-grid.css.map" />
     <None Include="Content\bootstrap\css\bootstrap-grid.min.css.map" />
