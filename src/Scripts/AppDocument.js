@@ -40,8 +40,8 @@
 	};
 
 	/* controller */
-	searchController.$inject = ['$scope', '$q', 'searchService'];
-	function searchController($scope, $q, searchService) {
+	searchController.$inject = ['$scope', 'searchService'];
+	function searchController($scope, searchService) {
 		// models
 		$scope.searchString = '';
 		$scope.items = [
@@ -83,31 +83,34 @@
 		];
 
 		// functions
-		var activate = function () {
+        var activate = function () {
+            $scope.webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
 			$scope.appweburl = decodeURIComponent(getQueryStringParameter("SPAppWebUrl"));
 			$scope.hostweburl = decodeURIComponent(getQueryStringParameter("SPHostUrl"));
 		}
 
 		var getQueryStringParameter = function (paramToRetrieve) {
 			var params = document.URL.split("?")[1].split("&");
-			var strParams = "";
 			for (var i = 0; i < params.length; i = i + 1) {
 				var singleParam = params[i].split("=");
-				if (singleParam[0] == paramToRetrieve)
-					return singleParam[1];
+                if (singleParam[0] == paramToRetrieve) {
+                    return singleParam[1];
+                }
 			}
 		}
 
 		$scope.changeSearch = function (keyword) {
-			console.log('- changeSearch():', keyword);
+			//console.log('- changeSearch():', keyword);
 		}
 
 		$scope.submitSearch = function (keyword) {
-            var siteUrl = $scope.appweburl || _spPageContextInfo.siteAbsoluteUrl;
-			searchService.getData(siteUrl, keyword).then(function (result) {
-				if (result) {
-					console.log(result.d.query.PrimaryQueryResult);
-				}
+            searchService.getData($scope.webAbsoluteUrl, keyword).then(function (result) {
+                var { query } = result.data.d;
+                if (query) {
+                    console.log('- PrimaryQueryResult:', query.PrimaryQueryResult);
+                    console.log('- SecondaryQueryResults:', query.SecondaryQueryResults);
+                    console.log('- Properties:', query.Properties);
+                }
 			}, function (error) {
 				console.log(error);
 			})
@@ -119,20 +122,17 @@
 
 	/* service */
 	searchService.$inject = ['$http', '$q'];
-	function searchService($http, $q) {		
+	function searchService($http, $q) {
 		var searchService = function () {
 		}
-		searchService.prototype.getData = function (siteUrl, keyword) {
-            //var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
-            var url = String.format("https://development365.sharepoint.com/sites/develop/_api/web/lists/getbytitle('{0}')/items", 'Announcements');
+        searchService.prototype.getData = function (siteUrl, keyword) {
+            var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
+
 			var q = $q.defer();
 			$http({
 				url: url,
 				method: 'GET',
-                headers: {
-                    "Accept": "application/json;odata=verbose",
-                    "Content-Type": "application/json;odata=verbose"					
-				}
+                headers: { "Accept": "application/json;odata=verbose" }
 			}).then(function (result) {
 				q.resolve(result);
 			}, function (error, status) {
