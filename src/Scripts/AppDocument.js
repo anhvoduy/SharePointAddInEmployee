@@ -103,7 +103,7 @@
 		}
 
 		$scope.submitSearch = function (keyword) {
-			var siteUrl = $scope.hostweburl || _spPageContextInfo.siteAbsoluteUrl;
+            var siteUrl = $scope.appweburl || _spPageContextInfo.siteAbsoluteUrl;
 			searchService.getData(siteUrl, keyword).then(function (result) {
 				if (result) {
 					console.log(result.d.query.PrimaryQueryResult);
@@ -123,13 +123,15 @@
 		var searchService = function () {
 		}
 		searchService.prototype.getData = function (siteUrl, keyword) {
-			var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
+            //var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
+            var url = String.format("https://development365.sharepoint.com/sites/develop/_api/web/lists/getbytitle('{0}')/items", 'Announcements');
 			var q = $q.defer();
 			$http({
 				url: url,
 				method: 'GET',
-				headers: {
-					"Accept": "application/json;odata=verbose"
+                headers: {
+                    "Accept": "application/json;odata=verbose",
+                    "Content-Type": "application/json;odata=verbose"					
 				}
 			}).then(function (result) {
 				q.resolve(result);
