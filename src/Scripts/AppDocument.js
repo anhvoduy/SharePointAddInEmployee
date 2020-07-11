@@ -22,12 +22,15 @@
 					'			<input type="text" ng-model="searchString" ng-change="changeSearch(searchString)"                                              ' +
 					'                  placeholder="Enter your search terms" ng-keyup="$event.keyCode == 13 && submitSearch(searchString)"/>                   ' +
 					'		</div>																														 	   ' +
-					'		<ul>        																												 	   ' +
+                    '		<ul>        																												 	   ' +
+                    '		    <li ng-hide="(Array.isArray(items) && items.length==0)">        													 	       ' +
+                    '		        Not found any data      																								   ' +
+                    '		    </li>        																												   ' +
 					'			<li ng-repeat="i in items | searchFor:searchString">																	 	   ' +
 					'				<a href="{{i.url}}">																								 	   ' +
 					'					<img ng-src="{{i.image}}" />																					 	   ' +
 					'				</a>																												 	   ' +
-					'				<p>{{i.title}}</p>																									 	   ' +
+					'				<p>{{i.title}} | File Type: {{i.fileType}}</p>																			   ' +
 					'			</li>																													 	   ' +
 					'		</ul>            																											 	   ' +
 					'	</div>																															 	   ';
@@ -67,11 +70,12 @@
 			//console.log('- changeSearch():', keyword);
 		}
 
-		$scope.submitSearch = function (keyword) {
+        $scope.submitSearch = function (keyword) {
+            $scope.items = [];
             searchService.getData($scope.webAbsoluteUrl, keyword).then(function (result) {
                 var { query } = result.data.d;
                 console.log('- query:', query);
-                if (query) {                                        
+                if (query) {
                     angular.forEach(query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (item) {
                         var itemInfo = item.Cells.results;
                         $scope.items.push({
@@ -87,6 +91,7 @@
                     });
                 }
             }, function (error) {
+                $scope.items = [];
                 console.log(error);
             });
 		};
