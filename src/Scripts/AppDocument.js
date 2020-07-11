@@ -44,43 +44,7 @@
 	function searchController($scope, searchService) {
 		// models
 		$scope.searchString = '';
-		$scope.items = [
-			{
-				url: '../Images/logo.png',
-				title: '50 Must-have plugins for extending Twitter Bootstrap',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Making a Super Simple Registration System With PHP and MySQL',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Create a slide-out footer with this neat z-index trick',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'How to Make a Digital Clock with jQuery and CSS3',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Smooth Diagonal Fade Gallery with CSS3 Transitions',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Mini AJAX File Upload Form',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Your First Backbone.js App – Service Chooser',
-				image: '../Images/logo.png'
-			}
-		];
+		$scope.items = [];
 
 		// functions
         var activate = function () {
@@ -106,14 +70,25 @@
 		$scope.submitSearch = function (keyword) {
             searchService.getData($scope.webAbsoluteUrl, keyword).then(function (result) {
                 var { query } = result.data.d;
-                if (query) {
-                    console.log('- PrimaryQueryResult:', query.PrimaryQueryResult);
-                    console.log('- SecondaryQueryResults:', query.SecondaryQueryResults);
-                    console.log('- Properties:', query.Properties);
+                console.log('- query:', query);
+                if (query) {                                        
+                    angular.forEach(query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (item) {
+                        var itemInfo = item.Cells.results;
+                        $scope.items.push({
+                            lastModifiedTime: itemInfo[9].Value, // LastModifiedTime
+                            fileType: itemInfo[31].Value, // FileType
+                            fileSize: itemInfo[5].Value, // Size
+                            author: itemInfo[4].Value, // Author
+                            siteName: itemInfo[29].Value, // SiteName
+                            url: itemInfo[6].Value, // Path
+                            image: itemInfo[17].Value, // ServerRedirectedPreviewURL
+                            title: itemInfo[3].Value // Title
+                        });
+                    });
                 }
-			}, function (error) {
-				console.log(error);
-			})
+            }, function (error) {
+                console.log(error);
+            });
 		};
 
 		// start
