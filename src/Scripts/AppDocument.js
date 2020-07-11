@@ -22,12 +22,15 @@
 					'			<input type="text" ng-model="searchString" ng-change="changeSearch(searchString)"                                              ' +
 					'                  placeholder="Enter your search terms" ng-keyup="$event.keyCode == 13 && submitSearch(searchString)"/>                   ' +
 					'		</div>																														 	   ' +
-					'		<ul>        																												 	   ' +
+                    '		<ul>        																												 	   ' +
+                    '		    <li ng-hide="(Array.isArray(items) && items.length==0)">        													 	       ' +
+                    '		        Not found any data      																								   ' +
+                    '		    </li>        																												   ' +
 					'			<li ng-repeat="i in items | searchFor:searchString">																	 	   ' +
 					'				<a href="{{i.url}}">																								 	   ' +
 					'					<img ng-src="{{i.image}}" />																					 	   ' +
 					'				</a>																												 	   ' +
-					'				<p>{{i.title}}</p>																									 	   ' +
+					'				<p>{{i.title}} | File Type: {{i.fileType}}</p>																			   ' +
 					'			</li>																													 	   ' +
 					'		</ul>            																											 	   ' +
 					'	</div>																															 	   ';
@@ -40,77 +43,57 @@
 	};
 
 	/* controller */
-	searchController.$inject = ['$scope', '$q', 'searchService'];
-	function searchController($scope, $q, searchService) {
+	searchController.$inject = ['$scope', 'searchService'];
+	function searchController($scope, searchService) {
 		// models
 		$scope.searchString = '';
-		$scope.items = [
-			{
-				url: '../Images/logo.png',
-				title: '50 Must-have plugins for extending Twitter Bootstrap',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Making a Super Simple Registration System With PHP and MySQL',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Create a slide-out footer with this neat z-index trick',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'How to Make a Digital Clock with jQuery and CSS3',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Smooth Diagonal Fade Gallery with CSS3 Transitions',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Mini AJAX File Upload Form',
-				image: '../Images/logo.png'
-			},
-			{
-				url: '../Images/logo.png',
-				title: 'Your First Backbone.js App – Service Chooser',
-				image: '../Images/logo.png'
-			}
-		];
+		$scope.items = [];
 
 		// functions
-		var activate = function () {
+        var activate = function () {
+            $scope.webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
 			$scope.appweburl = decodeURIComponent(getQueryStringParameter("SPAppWebUrl"));
 			$scope.hostweburl = decodeURIComponent(getQueryStringParameter("SPHostUrl"));
 		}
 
 		var getQueryStringParameter = function (paramToRetrieve) {
 			var params = document.URL.split("?")[1].split("&");
-			var strParams = "";
 			for (var i = 0; i < params.length; i = i + 1) {
 				var singleParam = params[i].split("=");
-				if (singleParam[0] == paramToRetrieve)
-					return singleParam[1];
+                if (singleParam[0] == paramToRetrieve) {
+                    return singleParam[1];
+                }
 			}
 		}
 
 		$scope.changeSearch = function (keyword) {
-			console.log('- changeSearch():', keyword);
+			//console.log('- changeSearch():', keyword);
 		}
 
-		$scope.submitSearch = function (keyword) {
-			var siteUrl = $scope.hostweburl || _spPageContextInfo.siteAbsoluteUrl;
-			searchService.getData(siteUrl, keyword).then(function (result) {
-				if (result) {
-					console.log(result.d.query.PrimaryQueryResult);
-				}
-			}, function (error) {
-				console.log(error);
-			})
+        $scope.submitSearch = function (keyword) {
+            $scope.items = [];
+            searchService.getData($scope.webAbsoluteUrl, keyword).then(function (result) {
+                var { query } = result.data.d;
+                console.log('- query:', query);
+                if (query) {
+                    angular.forEach(query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (item) {
+                        var itemInfo = item.Cells.results;
+                        $scope.items.push({
+                            lastModifiedTime: itemInfo[9].Value, // LastModifiedTime
+                            fileType: itemInfo[31].Value, // FileType
+                            fileSize: itemInfo[5].Value, // Size
+                            author: itemInfo[4].Value, // Author
+                            siteName: itemInfo[29].Value, // SiteName
+                            url: itemInfo[6].Value, // Path
+                            image: itemInfo[17].Value, // ServerRedirectedPreviewURL
+                            title: itemInfo[3].Value // Title
+                        });
+                    });
+                }
+            }, function (error) {
+                $scope.items = [];
+                console.log(error);
+            });
 		};
 
 		// start
@@ -119,18 +102,17 @@
 
 	/* service */
 	searchService.$inject = ['$http', '$q'];
-	function searchService($http, $q) {		
+	function searchService($http, $q) {
 		var searchService = function () {
 		}
-		searchService.prototype.getData = function (siteUrl, keyword) {
-			var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
+        searchService.prototype.getData = function (siteUrl, keyword) {
+            var url = String.format("{0}/_api/search/query?querytext='{1}'", siteUrl, keyword);
+
 			var q = $q.defer();
 			$http({
 				url: url,
 				method: 'GET',
-				headers: {
-					"Accept": "application/json;odata=verbose"
-				}
+                headers: { "Accept": "application/json;odata=verbose" }
 			}).then(function (result) {
 				q.resolve(result);
 			}, function (error, status) {
