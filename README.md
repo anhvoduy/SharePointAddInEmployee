@@ -6,3 +6,5 @@
 	-List				-Read
 	-Search				-QueryAsUserIgnoreAppPrincipal
 
+# link deploy sharepoint app to microsoft store
+https://partner.microsoft.com/en-us/dashboard/
