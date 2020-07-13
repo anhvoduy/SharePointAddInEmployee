@@ -6,14 +6,14 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharePoint Documents")]
-[assembly: AssemblyDescription("SharePoint App Documents")]
+[assembly: AssemblyTitle("SharePoint Search Document")]
+[assembly: AssemblyDescription("SharePoint Search Document")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("home")]
-[assembly: AssemblyProduct("spapp-document")]
+[assembly: AssemblyProduct("sp-search-document")]
 [assembly: AssemblyCopyright("voduyanh1984@gmail.com")]
 [assembly: AssemblyTrademark("spapp-document")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyCulture("en-us")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -32,4 +32,4 @@ using System.Runtime.InteropServices;
 //
 [assembly: AssemblyVersion("1.1.0.0")]
 [assembly: AssemblyFileVersion("1.1.0.0")]
-[assembly: NeutralResourcesLanguage("en")]
+[assembly: NeutralResourcesLanguage("en-US")]
