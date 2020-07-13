@@ -7,4 +7,4 @@
 	-Search				-QueryAsUserIgnoreAppPrincipal
 
 # link deploy sharepoint app to microsoft store
-https://partner.microsoft.com/en-us/dashboard/
+https://partner.microsoft.com/en-us/dashboard/office/overview
