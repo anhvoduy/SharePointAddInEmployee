@@ -90,6 +90,7 @@
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
     <Content Include="Images\logo.png" />
+    <Content Include="Scripts\AppDocument.min.js" />
     <Content Include="Scripts\AppFeedback.js" />
     <Content Include="Scripts\AppDocument.js" />
     <Content Include="Scripts\BrowserHelper.js" />

@@ -10,5 +10,6 @@
     <ProjectItemFile Source="AppDocument.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="BrowserHelper.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="AppFeedback.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="AppDocument.min.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
