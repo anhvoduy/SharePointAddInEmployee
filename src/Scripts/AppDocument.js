@@ -1,5 +1,4 @@
-﻿'use strict';
-(function () {
+﻿(function () {
 	'use strict';
 	angular.module('appDocument', [])
 		.directive('searchContainer', searchContainer)
@@ -74,7 +73,6 @@
             $scope.items = [];
             searchService.getData($scope.webAbsoluteUrl, keyword).then(function (result) {
                 var { query } = result.data.d;
-                console.log('- query:', query);
                 if (query) {
                     angular.forEach(query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (item) {
                         var itemInfo = item.Cells.results;
