@@ -90,6 +90,7 @@
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
     <Content Include="Images\logo.png" />
+    <Content Include="Scripts\AppDocument.min.js" />
     <Content Include="Scripts\AppFeedback.js" />
     <Content Include="Scripts\AppDocument.js" />
     <Content Include="Scripts\BrowserHelper.js" />
@@ -177,6 +178,16 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.resx">
+      <OpcRelationship>content-defaultresource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.en-US.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

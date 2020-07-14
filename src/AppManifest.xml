@@ -7,8 +7,11 @@
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>SharePoint Documents</Title>
+    <Title>SharePoint App Document</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <SupportedLocales>
+      <SupportedLocale CultureName="en-US" />
+    </SupportedLocales>
   </Properties>
 
   <AppPrincipal>
