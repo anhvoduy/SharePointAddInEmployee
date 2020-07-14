@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharePoint Documents")]
-[assembly: AssemblyDescription("SharePoint App Documents")]
+[assembly: AssemblyTitle("SharePoint App Document")]
+[assembly: AssemblyDescription("SharePoint App Document")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("home")]
 [assembly: AssemblyProduct("spapp-document")]
