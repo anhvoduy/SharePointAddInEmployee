@@ -1,4 +1,4 @@
-# sharepoint-documents
+# sp-app-document:
 - query to sharepoint document library
 - query to sharepoint search service to get all documents
 - config AppManifest.xml:
