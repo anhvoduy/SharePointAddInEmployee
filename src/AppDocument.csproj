@@ -161,11 +161,11 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\SharePointDocuments\SharePointDocuments.feature">
+    <None Include="Features\AppDocument\AppDocument.feature">
       <FeatureId>{62697224-4efb-4681-945f-030b3f5c6cad}</FeatureId>
     </None>
-    <None Include="Features\SharePointDocuments\SharePointDocuments.Template.xml">
-      <DependentUpon>SharePointDocuments.feature</DependentUpon>
+    <None Include="Features\AppDocument\AppDocument.Template.xml">
+      <DependentUpon>AppDocument.feature</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +186,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources %28Host Web%29\Resources.en-US.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.vi-VN.resx">
       <OpcRelationship>content-resource</OpcRelationship>
     </Content>
   </ItemGroup>
