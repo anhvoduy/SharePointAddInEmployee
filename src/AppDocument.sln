@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointDocuments", "SharePointDocuments.csproj", "{5FFD62DE-7927-4B1E-A0E1-992A77FD37A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDocument", "AppDocument.csproj", "{5FFD62DE-7927-4B1E-A0E1-992A77FD37A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
